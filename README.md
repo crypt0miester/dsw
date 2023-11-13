@@ -8,7 +8,9 @@ DSWs are tailored to both the decentralized application (dApp) and the user's pu
 
 ## Technical Implementation
 - Users signs a unique message combined with a transaction specific to their PublicKey.
-![image](https://github.com/crypt0miester/dsw/assets/77497858/8d8afc54-307b-49ef-a936-522bbbec423a)
+
+![image (1)](https://github.com/crypt0miester/dsw/assets/77497858/7ee110ec-740c-48ce-8625-e1ae18e8e9ec)
+
 - A keypair is generated from the resulting signature, which is distinct for each user.
 ```ts
   // using sha256
