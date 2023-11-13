@@ -1,0 +1,21 @@
+{
+  "name": "decentralized-application-specific-wallet",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "type": "module",
+  "license": "AGPL",
+  "dependencies": {
+    "@solana/web3.js": "^1.87.6",
+    "@types/bn.js": "^5.1.5",
+    "@types/bs58": "^4.0.1",
+    "bs58": "^5.0.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "scripts": {
+    "start": "npx tsx src/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "typescript": "^4.9.5"
+  }
+}
