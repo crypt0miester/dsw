@@ -8,7 +8,13 @@ DSWs are tailored to both the decentralized application (dApp) and the user's pu
 
 ## Technical Implementation
 - Users signs a unique message combined with a transaction specific to their PublicKey.
+![image](https://github.com/crypt0miester/dsw/assets/77497858/8d8afc54-307b-49ef-a936-522bbbec423a)
 - A keypair is generated from the resulting signature, which is distinct for each user.
+```ts
+  // using sha256
+  const hash = crypto.createHmac('sha256', signature).digest();
+  const dAppSpecificWallet = Keypair.fromSeed(Uint8Array.from(hash));
+```
 - This allows users to fund/deposit their DSW, while the dApp maintains a semi-control over the keys.
 
 It is recommended that only open-source dApps implement this feature.
